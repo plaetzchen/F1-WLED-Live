@@ -4,7 +4,7 @@ The goal of this code is to use live F1 timing data to visualise the current gap
 
 ## Current setup
 
-Currently I am using [f1stuff's setup](https://github.com/f1stuff/f1-live-data) to ingest the live (or recorded) data into a InfluxDB2 database. While that is running the provided script is executed, takes the data from the InfluxDB, creates a frame for the LEDs and sends it to [WLED](https://github.com/Aircoookie/WLED) using the UDP interface. The current roundtrip is around 250ms, fast enough to have the strip do a strip close to realtime.
+Currently I am using [f1stuff's setup](https://github.com/f1stuff/f1-live-data) to ingest the live (or recorded) data into a InfluxDB2 database. While that is running the provided script is executed, takes the data from the InfluxDB, creates a frame for the LEDs and sends it to [WLED](https://github.com/Aircoookie/WLED) using the UDP interface. The current roundtrip is around 250ms, fast enough to have the strip do a lap close to realtime.
 
 ## Limitations
 
