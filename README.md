@@ -12,7 +12,7 @@ Currently this setup has some limitations:
 
 * The script uses timing data and not position data and the reference frame is the last lap of the leader, lapped drivers will not be visualized.
 * The data is close to realtime, however the animation going around the strip is not.
-* Two scripts need to run at the same time, talking to InfluxDB, this is not ideal for the DB and the script should probably keep the data in RAM an directly listen to the F1 timing server.
+* Two scripts need to run at the same time, talking to InfluxDD. This is not ideal for the DB and the script should probably keep the data in RAM and directly listen to the F1 timing server.
 * To support the next (2024) season the driver data in f1stuff's code needs to be updated to reflect driver changes (RIC for DEV). Run ```pip install .``` after you made the change.
 
 ## Usage
@@ -25,7 +25,7 @@ In order for this to work you need to do a couple of things:
 
 ## Long-term ideas
 
-* Skip the data base and keep timing data in RAM to speed up the process
+* Skip the database and keep timing data in RAM to speed up the process
 * Make the logic for the LEDs more robust, potentially including lapped cars
 * Move from a script on a laptop to a HomeAssistant Add-on or integration
 
