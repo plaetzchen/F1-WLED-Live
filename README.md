@@ -12,7 +12,7 @@ Currently this setup has some limitations:
 
 * The script uses timing data and not position data and the reference frame is the last lap of the leader, lapped drivers will not be visualized.
 * The data is close to realtime, however the animation going around the strip is not.
-* Two scripts need to run on the same time, talking to InfluxDB, this is not ideal for the DB and it should probably keep the data in RAM
+* Two scripts need to run at the same time, talking to InfluxDB, this is not ideal for the DB and the script should probably keep the data in RAM an directly lisren to the F1 timing server.
 * To support the next (2024) season the driver data in f1stuff's code needs to be updated to reflect driver changes (RIC for DEV). Run ```pip install .``` after you made the change.
 
 ## Usage
