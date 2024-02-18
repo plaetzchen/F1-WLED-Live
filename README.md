@@ -27,4 +27,12 @@ In order for this to work you need to do a couple of things:
 
 * Skip the data base and keep timing data in RAM to speed up the process
 * Make the logic for the LEDs more robust, potentially including lapped cars
-* Move from a script on a laptop to a HomeAssistant Add-on or integration 
+* Move from a script on a laptop to a HomeAssistant Add-on or integration
+
+## Demo
+
+
+https://github.com/plaetzchen/F1-WLED-Live/assets/365135/43a54522-2f14-484f-90b2-ea250cebc6b2
+
+
+Note that the race shown is not the data used for the WLED
