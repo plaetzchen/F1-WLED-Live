@@ -20,8 +20,14 @@ Currently this setup has some limitations:
 In order for this to work you need to do a couple of things:
 
 * Configure your hosts (InfluxDB and WLED), the strip length etc. before the race
+  - If you use the f1stuff Docker setup use the following:
+    - ```INFLUX_TOKEN = "wwPE9MycN2RzYX2ngYuap-Ri5pt5YOrxcVqN_u46SOs6CBj8SGKzxBHJpLnLfPrXLJZFLpEtzwoJR3Ik_8M2NQ=="```
+    - ```INFLUX_ORG = "c6d6c0228d6fd3ea"```
+    - ```INFLUX_URL = "http://localhost:8086"```
 * Start the data ingestion from f1-live-data
+  - See the Readme of F1stuff on how to do that
 * Start the script (ideally on another computer)
+  - ```python f1-wled-live.py```
 
 ## Long-term ideas
 
