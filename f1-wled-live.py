@@ -167,7 +167,11 @@ def sendFrameToLeds(next_frame):
 ## Trying to be a good citizen when the strip is stopped 
 def closeSock():
     print("Closing socket")
-    sock.close()
+    try:
+        sock.close()
+        print("Socket closed")
+    except:
+        print("Socket not closed, socket wasn't opened")
 
 ## The animation that makes the cars go around the strip. Works but could be cleaner
 def shiftFrame(frame):
