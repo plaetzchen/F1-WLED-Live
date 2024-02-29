@@ -103,7 +103,7 @@ def getDataFromDB():
         |> cumulativeSum(columns: ["position"])
         |> map(fn: (r) => ({ r with interval: r._value_interval * 1000.0 }))
         |> map(fn: (r) => ({ r with lastLap: r._value * 1000.0 }))"""
-    tables = query_api.query(query, org="Call a Nerd")
+    tables = query_api.query(query, org=INFLUX_ORG)
     
     table = tables[0]
     for idx, record in enumerate(table.records):
